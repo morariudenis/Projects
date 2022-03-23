@@ -22,11 +22,12 @@ chrome.implicitly_wait(1)
 chrome.get('https://formy-project.herokuapp.com/form')
 
 # elem gasit
-chrome.find_element(By.ID, 'first-name').send_keys('Andy')
+#chrome.find_element(By.ID, 'first-name').send_keys('Andy')
 
 # cauta elementul timp de 10 secunde (refresh la fiecare 500ms)
-last_name = WebDriverWait(chrome, 5).until(EC.presence_of_element_located((By.ID, "last-name123")))
+last_name = WebDriverWait(chrome, 5).until(EC.presence_of_element_located((By.ID, "last-name")))
 last_name.send_keys('S')
+last_name
 
 # de citit
 # https://www.geeksforgeeks.org/explicit-waits-in-selenium-python/

@@ -1,5 +1,5 @@
 # sleep - pauzam codul pe x sec
-
+#sleep te obliga sa faci pauza de 5 sec de ex dar daca eu gasesc elem in 2 sec trebuie sa astept aiurea
 # implicit wait
 
 # explicit wait - cauta elem timp de 10 sec

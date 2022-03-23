@@ -11,7 +11,7 @@ chrome.maximize_window()
 chrome.get('https://formy-project.herokuapp.com/form')
 
 actual = chrome.current_url
-expected = 'https://formy-project.herokuapp.com/form2'
+expected = 'https://formy-project.herokuapp.com/form'
 
 assert actual == expected, f'INVALID URL: expected {expected} but found {actual}'
 
