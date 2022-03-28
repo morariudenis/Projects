@@ -52,12 +52,14 @@ class Test(unittest.TestCase):
         self.assertTrue(elem.is_displayed(), 'Submit btn nu e vizibil')
 
     # verificam ca element are un atribut asteptat (ex clasa)
+    @unittest.skip
     def test_elem_atribute(self):
         actual = self.chrome.find_element(*self.SUBMIT_BTN).get_attribute('class')
         expected = 'btn btn-lg btn-primary'
         self.assertEqual(expected, actual, 'Submit btn href attribute is wrong')
 
     # verificam ca element nu e prezent
+    @unittest.skip
     def test_elem_not_displayed(self):
         # ai zice ca merge asa dar nu
         middle_name = self.chrome.find_element(*self.MIDDLE_NAME_INPUT)
@@ -65,6 +67,7 @@ class Test(unittest.TestCase):
         pass
 
     # verificam ca element nu e prezent v1
+    @unittest.skip
     def test_elem_not_displayed_v1(self):
         # verificam ca lista e goala
         middle_name = self.chrome.find_elements()
