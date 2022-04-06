@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # Gasiti elementele in partea de sus folosind ce selectors doriti voi
 #
 
-class Test2(unittest.TestCase):
+class Test3(unittest.TestCase):
     # elementele din pagina
     # in loc sa le scriem de n ori in teste, le trecem aici o sg data
     FORM_AUTHENTICATION= (By.XPATH, '//a[text()="Form Authentication"]')
@@ -195,7 +195,7 @@ class Test2(unittest.TestCase):
 # 	‘Nu am reusit sa gasesc parola’
 # 	‘Parola secreta este [parola]’
 
-
+@unittest.skip
     def test_12(self):
         self.chrome.find_element(By.ID, 'username').send_keys('tomsmith')
         text = self.chrome.find_element(By.TAG_NAME, 'h4').text
