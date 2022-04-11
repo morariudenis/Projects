@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
+from pages.base_page import BasePage
 
 # Impementati 3 pagini in noul proiect BDD cu POM
 # Home page https://the-internet.herokuapp.com/
@@ -14,7 +15,7 @@ from time import sleep
 # Sa contina mesajul de succes si verificare ca e displayed
 # Sa contina logout_btn si click pe el
 
-class Home_page(Browser):
+class Home_page(BasePage):
 
     FORM_AUTHENTICATION = (By.XPATH, '//a[text()="Form Authentication"]')
     USER_INPUT = (By.XPATH, '//input[@id="username"]')

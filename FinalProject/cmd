@@ -1,0 +1,17 @@
+pip install -U selenium
+pip install behave
+pip install behave-html-formatter
+pip install webdriver-manager
+
+run test
+behave -f html -o behave-report.html --tags=smoke
+
+
+
+Pycharm -> New Project trebuie sa adaugam Browser si sa importam tot timpul selenium
+pip install selenium (sau pip install -U selenium - pt update la zi)
+
+pip install behave (o librarie bdd care va interpreta si rula testele scrise in gherkin) -> CUCUMBER pt JAVA
+
+pip install behave-html-formatter (ne ajuta sa generam rapoarte bdd)
+
